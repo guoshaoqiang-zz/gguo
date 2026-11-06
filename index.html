@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="基于 Canvas 与原生 JavaScript 实现的网页版魂斗罗横版射击游戏。"
+    />
+    <title>魂斗罗 · Web Contra</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="screen" aria-label="魂斗罗游戏区域">
+        <canvas id="game" width="960" height="540"></canvas>
+
+        <div id="overlay" class="overlay">
+          <p class="eyebrow">WEB ARCADE / 1987</p>
+          <h1>魂斗罗<span>CONTRA</span></h1>
+          <p class="tagline">穿越丛林，击溃敌军，抵达关卡终点。</p>
+
+          <div class="key-guide" aria-label="操作说明">
+            <div><kbd>A</kbd><kbd>D</kbd><span>左右移动</span></div>
+            <div><kbd>SPACE</kbd><span>跳跃</span></div>
+            <div><kbd>J</kbd><span>射击</span></div>
+            <div><kbd>W</kbd><span>向上瞄准</span></div>
+            <div><kbd>S</kbd><span>空中斜射 / 下蹲</span></div>
+            <div><kbd>P</kbd><span>暂停</span></div>
+          </div>
+
+          <button id="start-btn" type="button">开始游戏</button>
+          <p class="hint">按 Enter 或 Space 亦可开始</p>
+        </div>
+      </section>
+
+      <footer class="meta">
+        <span>Canvas 2D</span>
+        <span>原生 JavaScript</span>
+        <span>固定时间步长 60Hz</span>
+      </footer>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
