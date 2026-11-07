@@ -1,0 +1,15 @@
+{
+  "name": "web-contra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dependency-free Contra-style side-scrolling shooter built with Canvas 2D.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  }
+}
